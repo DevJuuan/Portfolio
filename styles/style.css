@@ -382,7 +382,6 @@ footer{
     .menu{
         display: flex;
         padding: 0 22%;
-
     }
     .menu-item-contato{
         display: flex;
@@ -445,17 +444,22 @@ footer{
 
     header{
         gap: 30%;
-        padding: 0 0;
+        padding: 0 6%;
         position: absolute;
     }
     section{
         padding: 0 6%;
     }
     /*Header*/
+    .logo{
+        width: auto;
+    }
+
     .menu{
         display: flex;
-        padding: 3px;
+        padding: 0 5%;
     }
+
 
     /*Hero-Apresentação*/
     .hero-container{
