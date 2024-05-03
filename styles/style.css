@@ -440,11 +440,8 @@ footer{
     }
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:650px){
 
-    html{
-        max-width: 700px;
-    }
     header{
         gap: 30%;
         padding: 0 6%;
