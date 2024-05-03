@@ -429,15 +429,17 @@ footer{
 
 @media (max-width:700px){
     
+    section{
+        padding: 0 6%;
+    }
     /*Header*/
     .menu{
         display: flex;
-        padding: 0 6%;
+        padding: 4px;
     }
 
     /*Hero-Apresentação*/
     .hero-container{
-        padding: 4% 6%;
         height: auto;
         flex-direction: column;
         margin-top: 10%;
@@ -449,7 +451,7 @@ footer{
     }
     .presentation-t{
         margin-top: 4%;
-        font-size: 33px;
+        font-size: 28px;
     }
     .presentation-p{
         font-size: 12px;
@@ -462,9 +464,10 @@ footer{
 
     /*About*/
     .about{
-        height: 400px;
+        height: 100%;
         margin-top: 5%;
         width: 100%;
+        padding: 4% 0;
     }    
     .about-container{
         width: 100%;
@@ -494,8 +497,8 @@ footer{
 
     /* Formações */
     .formacoes{ 
-        padding: 4% 6%;
-        height: auto;
+        padding: 4% 0;
+        height: 100%;
     }
     .formacoes-container{
         display: flex;
@@ -511,8 +514,8 @@ footer{
 
     /* Experiencia */
     .experience{
-        padding: 2% 6%;
-        height: auto;
+        padding: 4% 0;
+        height: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -583,7 +586,7 @@ footer{
 
     /* contato */
     .contact{
-        padding: 2% 6%;
+        padding: 4% 0;
         background-color: rgba(44, 82, 254, 0.142);
         display: flex;
         flex-direction: column;
@@ -602,6 +605,14 @@ footer{
         text-align: center;
         padding: 1% 0;
         color: var(--cor-titulo);
+    }
+
+    .form-sub{
+        padding: 3% 6%;
+    }
+
+    .form-form{
+        padding: 0 6%;
     }
 
     /* footer */
