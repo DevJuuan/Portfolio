@@ -1,0 +1,609 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+:root{
+    --cor-background:#f5f5f5c9;
+    --cor-background2: #3f7edd76;
+    --cor-titulo: #464646;
+    --cor-fonte: #464646;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    background-color: var(--cor-background);
+    line-height: 1;
+    font-family: "Comfortaa", sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 5% 1%;
+}
+
+header{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    font-size: 16px;
+    gap: 40%;
+    padding: 1% 6%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f5f5f5cd;
+}
+
+/*Header*/
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.logo-img{
+    height: 22px;
+}
+
+.logo-title{
+    font-size: 18px;
+}
+
+.menu-list{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    gap: 20px;
+}
+
+.menu-list a{
+    text-decoration: none;
+    color: var(--cor-fonte);
+}
+
+.menu-item-contato{
+    display: none;
+}
+
+/*Hero-Apresentação*/
+.hero-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4% 6%;
+    height: 400px;
+}
+
+.profile-img{
+    height: 410px;
+    width: 40%;
+    border-radius: 50%;
+}
+
+.presentation-t{
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--cor-titulo);
+    text-shadow: 3px 2px 6px #484848;
+}
+
+.presentation-p{
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+.presentation-l{
+    display: flex;
+    padding-top: 30px;
+    gap: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.presentation-l a{
+    text-decoration: none;
+    color: var(--cor-fonte);
+}
+
+.presentation-l img{
+    height: 12px;
+}
+
+/*About*/
+.about{
+    display: flex;
+    align-items: center;
+    height: 200px;
+    margin-top: -30px;
+    background-color: var(--cor-background2)
+}
+
+.about-container{
+    width: 50%;
+    padding: 0 6%;
+}
+
+.about-t{
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.about-p{
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+/* Skills e Hobbies */
+
+.skills, .hobbies{
+    padding: 3% 6%;
+    margin-bottom: 1%;
+    height: 170px;
+}
+
+.skills h2, .hobbies h2{
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    color: var(--cor-titulo);
+}
+
+.skills-container, .hobbies-container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    height: 170px;
+    padding-top: 10px;
+}
+
+.skills-text, .hobbies-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    width: calc(100% / 5);
+}
+
+.skills-img, .hobbies-img{
+    height: 60px;
+    width: 50px;
+    margin: auto;
+}
+
+.skills-name, .hobbies-name{
+    text-align: center;
+}
+
+/* Formações */
+
+.formacoes{
+    padding: 1% 6%;
+    height: auto;
+    background-color: var(--cor-background2)
+}
+
+.formacoes h2{
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    color: var(--cor-titulo);
+}
+
+.formacoes-container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.formacoes-text{
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    text-align: center;
+}
+
+.formacoes-text img{
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.formacoes-name{
+    text-align: center;
+    font-size: 16px;
+    padding: 1% 0;
+    font-weight: 700;
+}
+
+.formacoes-desc{
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Experiencia */
+
+.experience{
+    padding: 2% 6%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience h2{
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    color: var(--cor-titulo);
+}
+
+.experience-item{
+    display: flex;
+    margin: 2%;
+    gap: 2%;
+    align-items: center;
+}
+
+.experience-item:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+.xp-image1{
+    height: 100%;
+    width: 547px;
+    border-radius: 4%;
+}
+
+.xp-image2{
+    border-radius: 4%;
+}
+
+.experience-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-title{
+    padding-bottom: 3%;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.experience-sub{
+    padding-bottom: 3%;
+    font-size: 12px;
+}
+
+.experience-links{
+    display: flex;
+    gap: 10%;
+    margin-top: 7%;
+}
+
+.experience-button-git, .experience-button-vercel{
+    cursor: pointer;
+    width: 117px;
+    height: 35px;
+    border-radius: 9px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* contato */
+
+.contact{
+    padding: 2% 6%;
+    background-color: var(--cor-background2);
+    display: flex;
+    gap: 3%;
+    align-items: center;
+}
+
+.form-img{
+    width: 450px;
+}
+
+.form-title{
+    font-size: 35px;
+    font-weight: 700;
+    padding: 1% 0;
+    color: var(--cor-titulo);
+}
+
+.form-sub{
+    font-size: 14px;
+    padding-bottom: 3%;
+}
+
+.form-form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-form input, .form-form textarea {
+    background: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    padding-left: 6px;
+}
+
+.form-form input{
+    height: 35px;
+}
+
+.form-form button {
+    cursor: pointer;
+    height: 35px;
+    font-weight: 700;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
+/* footer */
+footer{
+    padding: 0.5% 6%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+/* Responsividade */
+@media (max-width:1025px){
+
+    /*Header*/
+    header{
+        position: absolute;
+    }
+    .menu-list{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        padding: 0 18%;
+    }
+    .menu-item-contato{
+        display: flex;
+    }
+    .menu-item-contato a{
+        text-decoration: none;
+        color: var(--cor-fonte);
+        font-size: 19px;
+    }
+
+    /*Hero-Apresentação*/
+    .hero-container{
+        padding: 4% 6%;
+        height: 400px;
+    }
+    .profile-img{
+        height: 240px;
+        width: 25%;
+        border-radius: 50%;
+    }
+    .presentation-t{
+        font-size: 45px;
+    }    
+    .presentation-p{
+        font-size: 14px;
+    }    
+    .presentation-l{
+        padding-top: 20px;
+        gap: 20px;
+    }
+
+    /*About*/
+    .about{
+        height: 300px;
+    }    
+    .about-container{
+        width: 100%;
+    }
+
+    /* Formações */
+    .formacoes{
+        margin-top: 4%;
+        padding: 4% 6%;
+        height: 300px;
+    }
+    
+    /* Experiencia */
+    .experience{
+        padding: 4% 6%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .experience h2{
+        margin-bottom: 2%;
+    }
+}
+
+@media (max-width:505px){
+    
+    /*Header*/
+    .menu{
+        display: flex;
+        padding: 0 1%;
+    }
+
+    /*Hero-Apresentação*/
+    .hero-container{
+        padding: 4% 6%;
+        height: auto;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+    .profile-img{
+        height: 220px;
+        width: 50%;
+        border-radius: 50%;
+    }
+    .presentation-t{
+        margin-top: 4%;
+        font-size: 33px;
+    }
+    .presentation-p{
+        font-size: 12px;
+    }    
+    .presentation-l{
+        padding-top: 20px;
+        justify-content: space-between;
+        font-size: 18px;
+    }   
+
+    /*About*/
+    .about{
+        height: 400px;
+    }    
+    .about-container{
+        width: 100%;
+    }
+    .about-t{
+        text-align: center;
+    }
+
+    /* Skills e Hobbies */
+    .skills, .hobbies{
+        padding: 4% 6%;
+        height: 300px;
+    }    
+    .skills-container, .hobbies-container{
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        padding-top: 20px;
+        width: 400px;
+    }    
+    .skills-text, .hobbies-text{
+        height: 90px;
+        padding: 10px;
+    }
+
+    /* Formações */
+    .formacoes{ 
+        padding: 4% 6%;
+        height: auto;
+    }
+    .formacoes-container{
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    .formacoes-text{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Experiencia */
+    .experience{
+        padding: 2% 6%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .experience h2{
+        font-weight: 700;
+        font-size: 35px;
+        text-align: center;
+        color: var(--cor-titulo);
+    }
+    
+    .experience-item{
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+        align-items: center;
+    }
+    
+    .experience-item:nth-child(2){
+        flex-direction: column;
+    }
+    
+    .xp-image1{
+        width: 400px;
+        border-radius: 4%;
+    }
+    
+    .xp-image2{
+        width: 400px;
+        border-radius: 4%;
+    }
+    
+    .experience-text{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .experience-title{
+        margin-top: 5%;
+        text-align: center;
+        padding-bottom: 1%;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    
+    .experience-sub{
+        padding-bottom: none;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .experience-links{
+        display: flex;
+        gap: 10%;
+        margin: 3% 0 5% 0;
+        justify-content: center;
+    }
+    
+    .experience-button-git, .experience-button-vercel{
+        cursor: pointer;
+        width: 200px;
+        height: 40px;
+        border-radius: 9px;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    /* contato */
+    .contact{
+        padding: 2% 6%;
+        background-color: rgba(44, 82, 254, 0.142);
+        display: flex;
+        flex-direction: column;
+        gap: 3%;
+        align-items: center;
+    }
+    
+    .form-img{
+        display: none;
+        width: 450px;
+    }
+    
+    .form-title{
+        font-size: 35px;
+        font-weight: 700;
+        text-align: center;
+        padding: 1% 0;
+        color: var(--cor-titulo);
+    }
+
+    /* footer */
+    footer{
+        padding: 2%;
+    }
+}
