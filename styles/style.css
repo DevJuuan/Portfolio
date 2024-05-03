@@ -429,9 +429,11 @@ footer{
 
 @media screen and (max-width:700px){
     body{
-        align-items: center;
+        max-width: 700px;
     }
-
+    header{
+         gap: 30%;
+    }
     section{
         padding: 0 6%;
     }
@@ -454,7 +456,7 @@ footer{
     }
     .presentation-t{
         margin-top: 4%;
-        font-size: 28px;
+        font-size: 21px;
     }
     .presentation-p{
         font-size: 12px;
