@@ -74,6 +74,7 @@ header {
 }
 
 /*Hero-Apresentação*/
+
 .hero-container {
     display: flex;
     flex-direction: row-reverse;
@@ -83,6 +84,7 @@ header {
     height: 400px;
     margin-top: 5%;
 }
+
 
 .profile-img {
     height: 410px;
@@ -488,6 +490,11 @@ footer {
     }
 
     /*Hero-Apresentação*/
+    section.hero{
+        padding: 0;
+        margin: 0;
+    }
+
     .hero-container {
         height: auto;
         flex-direction: column;
@@ -641,7 +648,7 @@ footer {
     .experience-button-git,
     .experience-button-vercel {
         cursor: pointer;
-        width: 200px;
+        width: 150px;
         height: 40px;
         border-radius: 9px;
         text-align: center;
